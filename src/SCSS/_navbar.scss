@@ -1,0 +1,53 @@
+#navbar {
+  width: 100%;
+  position: fixed;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: $shadow;
+  z-index: 9999;
+
+  .logo {
+    font-family: $title-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $green;
+  }
+
+  .menu {
+    display: flex;
+    font-family: $text-font;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    .navLink {
+      padding: 1rem;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.5rem;
+
+    .ldMode {
+      margin-left: 1rem;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .navMobile {
+      //display: none;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
