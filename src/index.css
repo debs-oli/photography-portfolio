@@ -99,21 +99,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -121,12 +117,17 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 a {
   text-decoration: none;
-}/*# sourceMappingURL=index.css.map */
+}
+
+:root {
+  --green: #6b9080;
+  --text-font: "Source Sans Pro", sans-serif;
+  --title-font: "Playfair Display", serif;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
