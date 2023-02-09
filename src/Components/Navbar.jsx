@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HiMoon } from "react-icons/hi";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import "../CSS/Navbar.css";
 
 export default function Navbar() {
+  const [clickMenu, setClickMenu] = useState(false);
+  const handleClickMenu = () => setClickMenu(!clickMenu);
+
   return (
     <nav className="navbar">
       <h1>
@@ -13,7 +17,7 @@ export default function Navbar() {
         </NavLink>
       </h1>
 
-      <ul className="navMenu">
+      <ul className={clickMenu ? "navMenu active" : "navMenu"} onClick={() => handleClickMenu(false)}>
         <li>
           <NavLink to="/" className="navLink">
             home
@@ -38,10 +42,14 @@ export default function Navbar() {
 
       <ul className="navRight">
         <li className="navIcon">
-          <HiMoon className="navMode" />
+          <span>
+            <HiMoon className="navMode" />
+          </span>
         </li>
         <li className="navIcon">
-          <FaBars className="navMobile" />
+          <span className="navMobile" onClick={handleClickMenu}>
+            {clickMenu ? <FaTimes /> : <FaBars />}
+          </span>
         </li>
       </ul>
     </nav>
