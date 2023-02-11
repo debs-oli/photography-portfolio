@@ -77,11 +77,11 @@
   }
 
   .homeContent h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .homeContent h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .profile {
@@ -90,7 +90,39 @@
   }
 
   .img {
-    max-width: 60%;
-    margin-top: 1.5rem;
+    max-width: 65%;
+    margin-top: 1rem;
+  }
+
+  .work {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeContent {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .homeContent h1 {
+    font-size: 1.2rem;
+  }
+
+  .homeContent h2 {
+    font-size: 1rem;
+  }
+
+  .homeContent p {
+    font-size: 0.8rem;
+  }
+
+  .social .links {
+    width: 15px;
+    height: 15px;
+  }
+
+  .profile img {
+    display: none;
   }
 }

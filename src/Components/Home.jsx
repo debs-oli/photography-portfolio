@@ -7,11 +7,13 @@ export default function Home() {
   return (
     <main className="home">
       <div className="homeContent">
-        <h1>Hi I'm Marta Jesus</h1>
-        <h2>
-          a <span>photographer</span>
-        </h2>
-        <p>passionate photographer with a special interest in film and fashion photography</p>
+        <div>
+          <h1>Hi I'm Marta Jesus</h1>
+          <h2>
+            a <span>photographer</span>
+          </h2>
+          <p>passionate photographer with a special interest in film and fashion photography</p>
+        </div>
 
         <div className="social">
           <a href="https://www.behance.net/oceartn">
