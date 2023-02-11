@@ -1,0 +1,96 @@
+.home {
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeContent h1 {
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.homeContent h2 {
+  margin-top: 1rem;
+  font-family: var(--title-font);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.homeContent p {
+  margin-top: 1rem;
+  font-family: var(--text-font);
+  font-size: 1rem;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social .links {
+  width: 20px;
+  height: 20px;
+  padding: 0.5rem;
+  margin: 0 5px 0 0;
+  border-radius: 40%;
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.social .links:hover {
+  background-color: var(--green);
+  color: #ffffff;
+  transform: 0.4s ease-in;
+}
+
+.img {
+  max-width: 95%;
+}
+
+.work {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.seeWork {
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: var(--green);
+  color: #ffffff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .homeContent {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .homeContent h1 {
+    font-size: 2rem;
+  }
+
+  .homeContent h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .img {
+    max-width: 60%;
+    margin-top: 1.5rem;
+  }
+}
