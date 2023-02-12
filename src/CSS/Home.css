@@ -6,20 +6,24 @@
   align-items: center;
 }
 
-.homeContent h1 {
+h1 {
   font-family: var(--title-font);
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-.homeContent h2 {
+h2 {
   margin-top: 1rem;
   font-family: var(--title-font);
   font-size: 2rem;
   font-weight: 600;
 }
 
-.homeContent p {
+h2 span {
+  color: var(--green);
+}
+
+p {
   margin-top: 1rem;
   font-family: var(--text-font);
   font-size: 1rem;
@@ -99,7 +103,31 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 700px) {
+  .homeContent {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .homeContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .homeContent h2 {
+    font-size: 1.4rem;
+  }
+
+  .profile {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
   .homeContent {
     justify-content: center;
     text-align: center;
