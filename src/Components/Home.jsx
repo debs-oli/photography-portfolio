@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="home">
       <div className="homeContent">
-        <h1>Hi I'm Marta Jesus</h1>
+        <h1>Hi, I'm Marta Jesus</h1>
         <h2>
           a <span>photographer</span>
         </h2>
@@ -25,11 +25,13 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="work">
-          <NavLink to="/work" className="seeWork">
-            check my work
-          </NavLink>
-        </div>
+        {
+          <div className="work">
+            <NavLink to="/work" className="seeWork">
+              check my work
+            </NavLink>
+          </div>
+        }
       </div>
 
       <div className="profile">

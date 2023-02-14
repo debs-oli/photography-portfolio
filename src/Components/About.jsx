@@ -20,7 +20,9 @@ export default function About() {
 
   return (
     <main className="about">
-      <img src="/Images/about.png" alt="" />
+      <div className="aboutImg">
+        <img src="/Images/about.png" alt="" />
+      </div>
 
       <div className="aboutContent">
         <h1>get to know me</h1>
@@ -115,15 +117,15 @@ export default function About() {
           {/* EDUCATION CONTENT */}
           <div className={clickTab === 3 ? "content activeContent" : "content"}>
             <div className="educationFilter">
-              <h3>school of arts, catholic university of portugal</h3>
-              <h4>degree in sound and image</h4>
+              <h2>school of arts, catholic university of portugal</h2>
+              <h3>degree in sound and image</h3>
               <p>2018 - 2020</p>
               <p>
                 Broad set of skills in the fields of cinema and audiovisual, sound design, multimedia art and 3D
                 animation:
               </p>
               <ul>
-                <li>
+                <li className="goals">
                   <span>
                     <FaAngleRight />
                   </span>{" "}
@@ -154,8 +156,8 @@ export default function About() {
           {experience.map((experience, index) => (
             <div className={clickTab === 4 ? "content activeContent" : "content"}>
               <div className="experienceFilter">
-                <h3>{experience.company}</h3>
-                <h4>{experience.position}</h4>
+                <h2>{experience.company}</h2>
+                <h3>{experience.position}</h3>
                 <p>{experience.time}</p>
               </div>
             </div>
