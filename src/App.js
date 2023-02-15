@@ -1,4 +1,3 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -9,19 +8,15 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Routes>
-        <Footer />
-        <ScrollToTop />
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <Navbar />
+      <Home />
+      <About />
+      <Work />
+      <Contacts />
+      <Footer />
+      <ScrollToTop />
+    </div>
   );
 }
 

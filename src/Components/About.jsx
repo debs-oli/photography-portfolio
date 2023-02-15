@@ -19,12 +19,12 @@ export default function About() {
   }, []);
 
   return (
-    <main className="about">
+    <main className="about" id="about">
       <div className="aboutImg">
         <img src="/Images/about.png" alt="" />
       </div>
 
-      <div className="aboutContent">
+      <div>
         <h1>get to know me</h1>
         <ul className="tabs">
           <li className="singleTab" onClick={() => clickState(1)}>
@@ -44,7 +44,7 @@ export default function About() {
         <div className="tabContent">
           {/* ABOUT CONTENT */}
           <div className={clickTab === 1 ? "content activeContent" : "content"}>
-            <div className="aboutFilter">
+            <div className="aboutContent">
               <p>
                 Passionate photographer with a special interest in film and fashion photography! Always looking forward
                 for the next challenge in my field as well as in my personal growth. I have a unique and soulful gaze
@@ -80,7 +80,7 @@ export default function About() {
           </div>
           {/* SKILLS CONTENT */}
           <div className={clickTab === 2 ? "content activeContent" : "content"}>
-            <div className="skillsFilter">
+            <div className="skillsContent">
               <p>
                 I'm creative, a team player and organized. Additionally, I enjoy greatly to be constantly learning and
                 becoming a better professional and human being.
@@ -116,7 +116,7 @@ export default function About() {
 
           {/* EDUCATION CONTENT */}
           <div className={clickTab === 3 ? "content activeContent" : "content"}>
-            <div className="educationFilter">
+            <div className="educationContent">
               <h2>school of arts, catholic university of portugal</h2>
               <h3>degree in sound and image</h3>
               <p>2018 - 2020</p>
@@ -125,7 +125,7 @@ export default function About() {
                 animation:
               </p>
               <ul>
-                <li className="goals">
+                <li>
                   <span>
                     <FaAngleRight />
                   </span>{" "}
@@ -153,9 +153,9 @@ export default function About() {
             </div>
           </div>
           {/* EXPERIENCE CONTENT */}
-          {experience.map((experience, index) => (
-            <div className={clickTab === 4 ? "content activeContent" : "content"}>
-              <div className="experienceFilter">
+          {experience.map((experience) => (
+            <div key={experience.id} className={clickTab === 4 ? "content activeContent" : "content"}>
+              <div className="experienceContent">
                 <h2>{experience.company}</h2>
                 <h3>{experience.position}</h3>
                 <p>{experience.time}</p>

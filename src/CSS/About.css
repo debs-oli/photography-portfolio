@@ -1,11 +1,11 @@
 .about {
-  padding: 6rem;
+  padding: 4rem 6rem 0 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-img {
-  width: 100%;
+.about img {
+  max-width: 90%;
 }
 
 .content {
@@ -47,10 +47,10 @@ img {
   transform: 0.4s ease-in;
 }
 
-.aboutFilter,
-.skillsFilter,
-.educationFilter,
-.experienceFilter {
+.aboutContent,
+.skillsContent,
+.educationContent,
+.experienceContent {
   margin-top: 2rem;
 }
 
@@ -60,17 +60,17 @@ img {
   line-height: 1.5rem;
 }
 
-.aboutFilter ul {
+.aboutContent ul {
   padding-top: 2rem;
 }
 
-.aboutFilter ul li {
+.aboutContent ul li {
   line-height: 2rem;
   font-family: var(--text-font);
   font-size: 1rem;
 }
 
-.aboutFilter ul li span {
+.aboutContent ul li span {
   color: var(--green);
 }
 
@@ -151,7 +151,7 @@ img {
 .about h2 {
   font-family: var(--text-font);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -159,35 +159,36 @@ img {
   margin-top: 0.8rem;
   font-family: var(--text-font);
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
 }
 
-.educationFilter p {
+.educationContent p {
   margin-top: 0.8rem;
 }
 
-.educationFilter ul {
+.educationContent ul {
   margin-top: 0.5rem;
   padding-right: 0.5rem;
   font-family: var(--text-font);
   font-size: 1rem;
 }
 
-.educationFilter ul li {
+.educationContent ul li {
   line-height: 1.5rem;
 }
 
-.educationFilter ul li span {
+.educationContent ul li span {
   color: var(--green);
 }
 
-.experienceFilter p {
+.experienceContent p {
   margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 1023px) {
   .about {
+    padding: 2rem 6rem;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -203,6 +204,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .about {
+    padding: 2rem 4rem;
     justify-content: center;
   }
 
@@ -212,6 +214,7 @@ img {
 
   .tabs {
     padding-top: 1rem;
+    justify-content: center;
   }
 
   .about p {
@@ -230,11 +233,11 @@ img {
     font-size: 1rem;
   }
 
-  .aboutFilter ul li {
+  .aboutContent ul li {
     font-size: 0.9rem;
   }
 
-  .educationFilter ul {
+  .educationContent ul {
     font-size: 0.9rem;
   }
 }

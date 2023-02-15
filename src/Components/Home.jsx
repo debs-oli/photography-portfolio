@@ -1,11 +1,11 @@
+import React from "react";
 import { FaBehance, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 
 import "../CSS/Home.css";
 
 export default function Home() {
   return (
-    <main className="home">
+    <main className="home" id="home">
       <div className="homeContent">
         <h1>Hi, I'm Marta Jesus</h1>
         <h2>
@@ -27,9 +27,7 @@ export default function Home() {
 
         {
           <div className="work">
-            <NavLink to="/work" className="seeWork">
-              check my work
-            </NavLink>
+            <a href="#work">check my work</a>
           </div>
         }
       </div>

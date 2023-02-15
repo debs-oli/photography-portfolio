@@ -1,32 +1,33 @@
 .home {
-  padding: 6rem;
+  padding: 6rem 5rem 0 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-h1 {
+.home h1 {
   font-family: var(--title-font);
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-h2 {
+.home h2 {
   margin-top: 1rem;
   font-family: var(--title-font);
   font-size: 2rem;
   font-weight: 600;
 }
 
-h2 span {
+.home h2 span {
   color: var(--green);
 }
 
-p {
+.home p {
   margin-top: 1rem;
   font-family: var(--text-font);
   font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 .social {
@@ -49,8 +50,8 @@ p {
   transform: 0.4s ease-in;
 }
 
-.img {
-  max-width: 90%;
+.home .img {
+  width: 90%;
 }
 
 .work {
@@ -58,7 +59,7 @@ p {
   cursor: pointer;
 }
 
-.seeWork {
+.work a {
   font-family: var(--text-font);
   font-size: 1rem;
   font-weight: 600;
@@ -73,28 +74,23 @@ p {
   .home {
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .homeContent {
+    padding: 6rem 1rem 0 1rem;
     justify-content: center;
     text-align: center;
   }
 
-  .homeContent h1 {
+  .home h1 {
     font-size: 1.8rem;
   }
 
-  .homeContent h2 {
+  .home h2 {
     font-size: 1.4rem;
   }
 
-  .profile {
+  .home .img {
     justify-content: center;
     text-align: center;
-  }
-
-  .img {
-    max-width: 65%;
+    max-width: 70%;
     margin-top: 1rem;
   }
 
@@ -103,54 +99,21 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .homeContent {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .homeContent h1 {
-    font-size: 1.8rem;
-  }
-
-  .homeContent h2 {
-    font-size: 1.4rem;
-  }
-
-  .profile {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .profile img {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 480px) {
-  .homeContent {
-    justify-content: center;
-    text-align: center;
+  .home h1 {
+    font-size: 1.5rem;
   }
 
-  .homeContent h1 {
-    font-size: 1.2rem;
+  .home h2 {
+    font-size: 1.3rem;
   }
 
-  .homeContent h2 {
-    font-size: 1rem;
-  }
-
-  .homeContent p {
-    font-size: 0.8rem;
+  .home p {
+    font-size: 0.9rem;
   }
 
   .social .links {
-    width: 15px;
-    height: 15px;
-  }
-
-  .profile img {
-    display: none;
+    width: 20px;
+    height: 20px;
   }
 }
