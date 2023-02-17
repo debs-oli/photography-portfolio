@@ -15,25 +15,23 @@ export default function Home() {
 
         <div className="social">
           <a href="https://www.behance.net/oceartn">
-            <FaBehance className="links" />
+            <FaBehance className="socialLinks" />
           </a>
           <a href="https://www.instagram.com/oceartn/">
-            <FaInstagram className="links" />
+            <FaInstagram className="socialLinks" />
           </a>
           <a href="https://www.linkedin.com/in/oceartn/">
-            <FaLinkedinIn className="links" />
+            <FaLinkedinIn className="socialLinks" />
           </a>
         </div>
 
-        {
-          <div className="work">
-            <a href="#work">check my work</a>
-          </div>
-        }
+        <div className="checkWork">
+          <a href="#work">check my work</a>
+        </div>
       </div>
 
       <div className="profile">
-        <img src="/Images/marta.png" alt="" className="img" />
+        <img src="/Images/marta.png" alt="profilePic" />
       </div>
     </main>
   );

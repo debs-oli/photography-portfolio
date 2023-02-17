@@ -20,9 +20,7 @@ export default function About() {
 
   return (
     <main className="about" id="about">
-      <div className="aboutImg">
-        <img src="/Images/about.png" alt="" />
-      </div>
+      <img src="/Images/about.png" alt="" />
 
       <div>
         <h1>get to know me</h1>
