@@ -6,10 +6,10 @@ export default function Work() {
   const [work, setWork] = useState(workData);
 
   const filterWork = (categoryWork) => {
-    const updatedWork = workData.filter((currentCategory) => {
+    const result = workData.filter((currentCategory) => {
       return currentCategory.category === categoryWork;
     });
-    setWork(updatedWork);
+    setWork(result);
   };
 
   return (
@@ -17,7 +17,7 @@ export default function Work() {
       <h1>my recent work</h1>
 
       <ul>
-        <li onClick={() => setWork(workData)}>see all</li>
+        <li onClick={() => setWork(workData)}>all</li>
         <li onClick={() => filterWork("editorial")}>editorial</li>
         <li onClick={() => filterWork("wedding")}>wedding</li>
         <li onClick={() => filterWork("fashion")}>fashion</li>
