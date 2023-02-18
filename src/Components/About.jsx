@@ -84,28 +84,28 @@ export default function About() {
                 becoming a better professional and human being.
               </p>
               <div className="skillsWrapper">
-                <div class="skill">
+                <div className="skill">
                   <p>Adobe Premiere Pro</p>
-                  <div class="skillBar skill1">
-                    <span class="skillCount1">90%</span>
+                  <div className="skillBar skill1">
+                    <span className="skillCount1">90%</span>
                   </div>
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <p>Adobe Lightroom</p>
-                  <div class="skillBar skill2">
-                    <span class="skillCount2">90%</span>
+                  <div className="skillBar skill2">
+                    <span className="skillCount2">90%</span>
                   </div>
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <p>Adobe Photoshop</p>
-                  <div class="skillBar skill3">
-                    <span class="skillCount3">50%</span>
+                  <div className="skillBar skill3">
+                    <span className="skillCount3">50%</span>
                   </div>
                 </div>
-                <div class="skill">
+                <div className="skill">
                   <p>English</p>
-                  <div class="skillBar skill4">
-                    <span class="skillCount4">90%</span>
+                  <div className="skillBar skill4">
+                    <span className="skillCount4">90%</span>
                   </div>
                 </div>
               </div>
