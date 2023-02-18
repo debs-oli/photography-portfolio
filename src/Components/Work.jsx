@@ -1,25 +1,27 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import workData from "./WorkData";
 import "../CSS/Work.css";
 
 export default function Work() {
-  const [work, setWork] = useState([]);
+  const [work, setWork] = useState(workData);
 
-  useEffect(() => {
-    fetch("/API/work.json")
-      .then((response) => response.json())
-      .then((data) => setWork(data));
-  }, []);
+  const filterWork = (categoryWork) => {
+    const updatedWork = workData.filter((currentCategory) => {
+      return currentCategory.category === categoryWork;
+    });
+    setWork(updatedWork);
+  };
 
   return (
     <main className="work" id="work">
       <h1>my recent work</h1>
 
       <ul>
-        <li>see all</li>
-        <li>editorial</li>
-        <li>wedding</li>
-        <li>fashion</li>
-        <li>brands</li>
+        <li onClick={() => setWork(workData)}>see all</li>
+        <li onClick={() => filterWork("editorial")}>editorial</li>
+        <li onClick={() => filterWork("wedding")}>wedding</li>
+        <li onClick={() => filterWork("fashion")}>fashion</li>
+        <li onClick={() => filterWork("brands")}>brands</li>
       </ul>
 
       <div className="cardContainer">
