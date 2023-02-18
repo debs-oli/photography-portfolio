@@ -17,7 +17,7 @@ export default function Navbar() {
         </a>
       </h1>
 
-      <ul className={clickMenu ? "navMenu active" : "navMenu"}>
+      <ul className={clickMenu ? "navMenu active" : "navMenu"} onClick={handleClickMenu}>
         <li>
           <a href="#home">home</a>
         </li>

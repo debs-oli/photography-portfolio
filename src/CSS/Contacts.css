@@ -3,7 +3,7 @@
 }
 
 #contacts .container {
-  padding: 4rem;
+  padding-top: 4rem;
   display: grid;
   grid-template-columns: 0.9fr 2fr;
   grid-gap: 2rem;
@@ -24,16 +24,12 @@
   padding-top: 1.5rem;
   font-family: var(--text-font);
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
-#contacts h3 {
+.contactTitle p {
   padding-top: 1.5rem;
-  font-family: var(--text-font);
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: capitalize;
 }
 
 #contacts p {
@@ -75,6 +71,7 @@ form textarea {
   height: 80px;
   width: 100%;
   margin-bottom: 0.8rem;
+  resize: none;
   font-family: var(--text-font);
   font-size: 1rem;
   color: #171c1f;
@@ -94,7 +91,7 @@ form label {
 }
 
 #contacts button {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   font-family: var(--text-font);
   font-size: 1rem;
   font-weight: 600;
@@ -103,4 +100,71 @@ form label {
   color: #ffffff;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  #contacts {
+    padding: 2rem 1.8rem;
+  }
+
+  #contacts .container {
+    padding-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .contactInfo {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #contacts .info {
+    margin: 1rem;
+    margin-bottom: 3.5rem;
+    display: inline-block;
+  }
+
+  #contacts .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  #contacts h2 {
+    font-size: 1rem;
+  }
+
+  #contacts p,
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contacts {
+    padding: 2rem 2rem;
+  }
+
+  #contacts .container {
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  #contacts h1 {
+    font-size: 1.4rem;
+  }
+
+  #contacts .info {
+    margin: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  #contacts .icon {
+    width: 15px;
+    height: 15px;
+  }
 }

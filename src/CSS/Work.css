@@ -38,7 +38,7 @@
 .work .cardContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 6rem;
+  grid-gap: 5rem;
   padding-top: 2rem;
 }
 
@@ -100,24 +100,25 @@
 
 @media screen and (max-width: 1023px) {
   .work {
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
   }
 
   .work .cardContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .work {
-    padding: 0 4rem;
+    padding: 0 1rem;
   }
 
   .work .cardContainer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
   }
 
   .work p {
