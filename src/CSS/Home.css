@@ -30,11 +30,11 @@
   line-height: 1.3rem;
 }
 
-.social {
+.home .social {
   margin-top: 1rem;
 }
 
-.socialLinks {
+.home .socialLinks {
   width: 20px;
   height: 20px;
   padding: 0.5rem;
@@ -44,7 +44,7 @@
   color: var(--green);
 }
 
-.socialLinks:hover {
+.home .socialLinks:hover {
   background-color: var(--green);
   color: #ffffff;
   transform: 0.4s ease-in;

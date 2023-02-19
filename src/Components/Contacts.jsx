@@ -93,7 +93,7 @@ export default function Contacts() {
             </div>
             <label>
               <input type="checkbox" name="agreement" onChange={handleChange} checked={formData.agreement} /> Please add
-              me to your newsletter and let me about your recent projects
+              me to your newsletter and let me know about your projects
             </label>
             <div>
               <button type="submit" className="btn">
