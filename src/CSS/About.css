@@ -1,10 +1,10 @@
-.about {
-  padding: 4rem 6rem 0 6rem;
+#about {
+  padding: 6rem 6rem 0 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.about img {
+#about img {
   max-width: 90%;
 }
 
@@ -16,7 +16,7 @@
   display: block;
 }
 
-.about h1 {
+#about h1 {
   font-family: var(--title-font);
   font-size: 1.5rem;
   font-weight: 700;
@@ -54,7 +54,7 @@
   margin-top: 2rem;
 }
 
-.about p {
+#about p {
   font-family: var(--text-font);
   font-size: 1rem;
   line-height: 1.5rem;
@@ -148,14 +148,14 @@
   right: 0;
 }
 
-.about h2 {
+#about h2 {
   font-family: var(--text-font);
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.about h3 {
+#about h3 {
   margin-top: 0.8rem;
   font-family: var(--text-font);
   font-size: 1.1rem;
@@ -187,13 +187,13 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .about {
-    padding: 2rem 6rem;
+  #about {
+    padding: 6rem 6rem 0 6rem;
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .about img {
+  #about img {
     display: none;
   }
 
@@ -203,12 +203,12 @@
 }
 
 @media screen and (max-width: 480px) {
-  .about {
-    padding: 2rem 4rem;
+  #about {
+    padding: 5rem 4rem 0 4rem;
     justify-content: center;
   }
 
-  .about h1 {
+  #about h1 {
     text-align: center;
   }
 
@@ -217,19 +217,19 @@
     justify-content: center;
   }
 
-  .about p {
+  #about p {
     font-size: 0.9rem;
   }
 
-  .about h1 {
+  #about h1 {
     font-size: 1.4rem;
   }
 
-  .about h2 {
+  #about h2 {
     font-size: 1.1rem;
   }
 
-  .about h3 {
+  #about h3 {
     font-size: 1rem;
   }
 

@@ -13,7 +13,7 @@ export default function Work() {
   };
 
   return (
-    <main className="work" id="work">
+    <main id="work">
       <h1>my recent work</h1>
 
       <ul>
@@ -24,7 +24,7 @@ export default function Work() {
         <li onClick={() => filterWork("brands")}>brands</li>
       </ul>
 
-      <div className="cardContainer">
+      <div className="container">
         {work.map((work) => (
           <div key={work.id}>
             <div className="card">

@@ -19,7 +19,7 @@ export default function About() {
   }, []);
 
   return (
-    <main className="about" id="about">
+    <main id="about">
       <img src="/Images/about.png" alt="" />
 
       <div>

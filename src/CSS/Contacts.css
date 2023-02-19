@@ -1,5 +1,5 @@
 #contacts {
-  padding: 5rem 6rem 6rem 6rem;
+  padding: 6rem 6rem 1rem 6rem;
 }
 
 #contacts .container {
@@ -9,8 +9,12 @@
   grid-gap: 2rem;
 }
 
-.contactTitle {
+#contacts .title {
   text-align: center;
+}
+
+#contacts .title p {
+  padding-top: 1.5rem;
 }
 
 #contacts h1 {
@@ -28,17 +32,13 @@
   text-transform: capitalize;
 }
 
-.contactTitle p {
-  padding-top: 1.5rem;
-}
-
 #contacts p {
   font-family: var(--text-font);
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-.info {
+#contacts .info {
   margin-bottom: 3.5rem;
   display: flex;
 }
@@ -53,7 +53,7 @@
   color: white;
 }
 
-.contactText {
+#contacts .text {
   margin-top: -0.5rem;
 }
 
@@ -104,7 +104,7 @@ form label {
 
 @media screen and (max-width: 1023px) {
   #contacts {
-    padding: 2rem 1.8rem;
+    padding: 6rem 1.8rem 1rem 1.8rem;
   }
 
   #contacts .container {
@@ -114,7 +114,7 @@ form label {
     grid-gap: 0;
   }
 
-  .contactInfo {
+  #contacts .infoWrapper {
     max-width: 100%;
     text-align: center;
   }
@@ -143,7 +143,7 @@ form label {
 
 @media screen and (max-width: 480px) {
   #contacts {
-    padding: 2rem 2rem;
+    padding: 5rem 2rem 3rem 2rem;
   }
 
   #contacts .container {
