@@ -1,6 +1,7 @@
-import React from "react";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 import { useState } from "react";
-import { HiMoon } from "react-icons/hi";
+import { BsFillLightbulbFill } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import "../CSS/Navbar.css";
@@ -9,15 +10,19 @@ export default function Navbar() {
   const [clickMenu, setClickMenu] = useState(false);
   const handleClickMenu = () => setClickMenu(!clickMenu);
 
+  const context = useContext(ThemeContext);
+  const { isDarkTheme, darkTheme, lightTheme, changeTheme } = context;
+  const theme = isDarkTheme ? darkTheme : lightTheme;
+
   return (
-    <nav className="navbar">
+    <nav style={theme} className="navbar">
       <h1>
         <a href="#home" className="logo">
           Marta Jesus
         </a>
       </h1>
 
-      <ul className={clickMenu ? "navMenu active" : "navMenu"} onClick={handleClickMenu}>
+      <ul style={theme} className={clickMenu ? "navMenu active" : "navMenu"} onClick={handleClickMenu}>
         <li>
           <a href="#home">home</a>
         </li>
@@ -34,8 +39,8 @@ export default function Navbar() {
 
       <ul className="navIcons">
         <li className="icon">
-          <span>
-            <HiMoon className="navMode" />
+          <span className="navMode" onClick={changeTheme}>
+            <BsFillLightbulbFill />
           </span>
         </li>
         <li className="icon">

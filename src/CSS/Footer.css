@@ -1,4 +1,5 @@
 #footer {
+  margin-top: 2rem;
   justify-content: center;
   text-align: center;
   box-shadow: var(--shadow);
@@ -19,6 +20,10 @@
 #footer ul li {
   display: inline;
   margin: 0.5rem;
+}
+
+#footer ul li a {
+  color: inherit;
 }
 
 #footer .socialLinks {

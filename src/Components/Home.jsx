@@ -1,4 +1,3 @@
-import React from "react";
 import { FaBehance, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 import "../CSS/Home.css";

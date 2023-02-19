@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  height: 9%;
+  height: 10%;
   padding: 1rem;
   display: flex;
   position: fixed;
@@ -30,12 +30,16 @@
   text-transform: capitalize;
 }
 
+.navbar ul li a {
+  color: inherit;
+}
+
 .navbar ul li a:hover {
   color: var(--green);
 }
 
 .icon {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .navMobile {
@@ -54,7 +58,6 @@
     top: 60px;
     left: -100%;
     position: fixed;
-    background: #ffffff;
     flex-direction: column;
     justify-content: center;
     text-align: center;

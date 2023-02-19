@@ -4,17 +4,27 @@ import About from "./Components/About";
 import Work from "./Components/Work";
 import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
+import { ThemeContext, ThemeContextProvider } from "./Components/ThemeContext";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Work />
-      <Contacts />
-      <Footer />
-    </div>
+    <ThemeContextProvider>
+      <ThemeContext.Consumer>
+        {(context) => {
+          const theme = context.isDarkTheme ? context.darkTheme : context.lightTheme;
+          return (
+            <div className="App" style={theme}>
+              <Navbar />
+              <Home />
+              <About />
+              <Work />
+              <Contacts />
+              <Footer />
+            </div>
+          );
+        }}
+      </ThemeContext.Consumer>
+    </ThemeContextProvider>
   );
 }
 

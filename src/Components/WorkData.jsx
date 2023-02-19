@@ -41,10 +41,10 @@ const workData = [
   },
   {
     id: 6,
-    title: "another time",
+    title: "scenes from another time",
     date: "24/04/2022",
     img: "/Images/card6.jpg",
-    url: "behance.net/gallery/142317761/Film-Editorial-Scenes-from-another-time-22",
+    url: "https://www.behance.net/gallery/142317761/Film-Editorial-Scenes-from-another-time-22",
     category: "editorial",
   },
 ];
