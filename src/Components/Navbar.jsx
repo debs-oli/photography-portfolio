@@ -15,7 +15,7 @@ export default function Navbar() {
   const theme = isDarkTheme ? darkTheme : lightTheme;
 
   return (
-    <nav style={theme} className="navbar">
+    <nav style={theme} id="navbar">
       <h1>
         <a href="#home" className="logo">
           Marta Jesus

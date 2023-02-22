@@ -86,7 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-} /* HTML5 display-role reset for older browsers */
+}
 article,
 aside,
 details,
@@ -131,7 +131,7 @@ button {
 
 :root {
   --green: #a4c3b2;
-  --text-font: "Source Sans Pro", sans-serif;
+  --text-font: "Roboto", sans-serif;
   --title-font: "Playfair Display", serif;
   --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

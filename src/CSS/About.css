@@ -31,10 +31,10 @@
 .singleTab {
   font-family: var(--text-font);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
   padding: 0.5rem 0.5rem;
-  margin: 0 5px 0 0;
+  margin: 0 0.3rem 0 0;
   border-radius: 25px;
   cursor: pointer;
   border: 2px solid var(--green);
@@ -86,7 +86,7 @@
 
 .skill p {
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -111,7 +111,7 @@
 .skillBar span {
   position: absolute;
   border-top: 5px solid var(--green);
-  top: -1.8rem;
+  top: -29px;
   font-family: var(--text-font);
   font-size: 0.9rem;
 }
@@ -151,7 +151,7 @@
 #about h2 {
   font-family: var(--text-font);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
 }
 
