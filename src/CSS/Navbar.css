@@ -38,8 +38,16 @@
   color: var(--green);
 }
 
-#navbar .icon {
+#navbar button {
   font-size: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+#navbar button:hover {
+  color: var(--green);
 }
 
 .navMobile {

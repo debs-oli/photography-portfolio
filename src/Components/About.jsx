@@ -25,17 +25,25 @@ export default function About() {
       <div>
         <h1>get to know me</h1>
         <ul className="tabs">
-          <li className="singleTab" onClick={() => clickState(1)}>
-            about
+          <li>
+            <button className="singleTab" onClick={() => clickState(1)}>
+              about
+            </button>
           </li>
-          <li className="singleTab" onClick={() => clickState(2)}>
-            skills
+          <li>
+            <button className="singleTab" onClick={() => clickState(2)}>
+              skills
+            </button>
           </li>
-          <li className="singleTab" onClick={() => clickState(3)}>
-            education
+          <li>
+            <button className="singleTab" onClick={() => clickState(3)}>
+              education
+            </button>
           </li>
-          <li className="singleTab" onClick={() => clickState(4)}>
-            experience
+          <li>
+            <button className="singleTab" onClick={() => clickState(4)}>
+              experience
+            </button>
           </li>
         </ul>
 

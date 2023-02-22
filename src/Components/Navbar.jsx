@@ -39,14 +39,14 @@ export default function Navbar() {
 
       <ul className="navIcons">
         <li className="icon">
-          <span className="navMode" onClick={changeTheme}>
+          <button className="navMode" onClick={changeTheme}>
             <BsFillLightbulbFill />
-          </span>
+          </button>
         </li>
         <li className="icon">
-          <span className="navMobile" onClick={handleClickMenu}>
+          <button className="navMobile" onClick={handleClickMenu}>
             {clickMenu ? <FaTimes /> : <FaBars />}
-          </span>
+          </button>
         </li>
       </ul>
     </nav>

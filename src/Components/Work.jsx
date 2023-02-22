@@ -17,11 +17,21 @@ export default function Work() {
       <h1>my recent work</h1>
 
       <ul>
-        <li onClick={() => setWork(workData)}>all</li>
-        <li onClick={() => filterWork("editorial")}>editorial</li>
-        <li onClick={() => filterWork("wedding")}>wedding</li>
-        <li onClick={() => filterWork("fashion")}>fashion</li>
-        <li onClick={() => filterWork("brands")}>brands</li>
+        <li>
+          <button onClick={() => setWork(workData)}>all</button>
+        </li>
+        <li>
+          <button onClick={() => filterWork("editorial")}>editorial</button>
+        </li>
+        <li>
+          <button onClick={() => filterWork("wedding")}>wedding</button>
+        </li>
+        <li>
+          <button onClick={() => filterWork("fashion")}>fashion</button>
+        </li>
+        <li>
+          <button onClick={() => filterWork("brands")}> brands</button>
+        </li>
       </ul>
 
       <div className="container">
