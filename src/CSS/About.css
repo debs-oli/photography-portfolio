@@ -17,7 +17,7 @@
 }
 
 #about h1 {
-  font-family: var(--title-font);
+  font-family: var(--text-font);
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -43,7 +43,8 @@
 }
 
 #about button:hover {
-  background-color: var(--green);
+  background-color: var(--dark-green);
+  border: 2px solid var(--dark-green);
   color: #ffffff;
   transform: 0.4s ease-in;
 }
@@ -97,7 +98,7 @@
   content: "";
   position: absolute;
   display: block;
-  background: #cccccc;
+  background-color: #cccccc;
   bottom: 0;
 }
 
@@ -106,7 +107,7 @@
   height: 0.6rem;
   position: relative;
   display: block;
-  background: var(--green);
+  background-color: var(--green);
 }
 
 .skillBar span {
@@ -157,10 +158,10 @@
 }
 
 #about h3 {
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
   font-family: var(--text-font);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -184,7 +185,7 @@
 }
 
 .experienceContent p {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -210,6 +211,7 @@
   }
 
   #about h1 {
+    font-size: 1.4rem;
     text-align: center;
   }
 
@@ -220,10 +222,6 @@
 
   #about p {
     font-size: 0.9rem;
-  }
-
-  #about h1 {
-    font-size: 1.4rem;
   }
 
   #about h2 {

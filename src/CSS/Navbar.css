@@ -21,12 +21,12 @@
 .navMenu,
 .navIcons {
   display: flex;
-  padding: 0.8rem;
 }
 
 #navbar ul li {
   padding: 1rem;
   font-family: var(--text-font);
+  font-size: 1rem;
   text-transform: capitalize;
 }
 
@@ -39,15 +39,20 @@
 }
 
 #navbar button {
-  font-size: 1rem;
+  font-size: 1.3rem;
   border: none;
   outline: none;
   background: none;
   color: inherit;
+  cursor: pointer;
 }
 
 #navbar button:hover {
   color: var(--green);
+}
+
+#navbar .navMode {
+  margin-right: -5rem;
 }
 
 .navMobile {
@@ -56,7 +61,7 @@
 
 .navMode:hover,
 .navMobile:hover {
-  color: var(--green);
+  color: var(--dark-green);
 }
 
 @media screen and (max-width: 767px) {
@@ -88,7 +93,7 @@
 
   #navbar ul li a:hover {
     color: #fff;
-    background: var(--green);
+    background-color: var(--dark-green);
     transform: 0.4s ease-in;
   }
 

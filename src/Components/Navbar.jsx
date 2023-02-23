@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { useState } from "react";
-import { BsFillLightbulbFill } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { HiMoon, HiSun } from "react-icons/hi";
 
 import "../CSS/Navbar.css";
 
@@ -13,6 +13,8 @@ export default function Navbar() {
   const context = useContext(ThemeContext);
   const { isDarkTheme, darkTheme, lightTheme, changeTheme } = context;
   const theme = isDarkTheme ? darkTheme : lightTheme;
+
+  const icon = isDarkTheme ? <HiSun /> : <HiMoon />;
 
   return (
     <nav style={theme} id="navbar">
@@ -40,7 +42,7 @@ export default function Navbar() {
       <ul className="navIcons">
         <li className="icon">
           <button className="navMode" onClick={changeTheme}>
-            <BsFillLightbulbFill />
+            {icon}
           </button>
         </li>
         <li className="icon">

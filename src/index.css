@@ -131,6 +131,7 @@ button {
 
 :root {
   --green: #a4c3b2;
+  --dark-green: #365949;
   --text-font: "Roboto", sans-serif;
   --title-font: "Playfair Display", serif;
   --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

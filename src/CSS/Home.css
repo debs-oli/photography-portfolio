@@ -7,14 +7,14 @@
 
 #home h1 {
   font-family: var(--title-font);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
 #home h2 {
   margin-top: 1rem;
   font-family: var(--title-font);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
@@ -45,7 +45,8 @@
 }
 
 #home .social:hover {
-  background-color: var(--green);
+  background-color: var(--dark-green);
+  border: 2px solid var(--dark-green);
   color: #ffffff;
   transform: 0.4s ease-in;
 }
@@ -64,10 +65,15 @@
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
-  background: var(--green);
+  background-color: var(--green);
   color: #ffffff;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
+}
+
+.checkWork a:hover {
+  background-color: var(--dark-green);
+  transform: 0.4s ease-in;
 }
 
 @media screen and (max-width: 1023px) {
@@ -80,15 +86,15 @@
   }
 
   #home h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   #home ul {
     justify-content: center;
   }
 
-  .home h2 {
-    font-size: 1.4rem;
+  #home h2 {
+    font-size: 1.8rem;
   }
 
   #home img {
@@ -105,11 +111,11 @@
 
 @media screen and (max-width: 480px) {
   #home h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   #home h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   #home p {
