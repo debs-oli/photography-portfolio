@@ -1,5 +1,4 @@
 #footer {
-  margin-top: 2rem;
   justify-content: center;
   text-align: center;
   box-shadow: var(--shadow);
@@ -14,7 +13,7 @@
 }
 
 #footer ul {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 #footer ul li {
@@ -35,7 +34,7 @@
 }
 
 #footer p {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: var(--title-font);
   font-size: 0.8rem;

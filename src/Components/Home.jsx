@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { FaBehance, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 import "../CSS/Home.css";
@@ -31,7 +32,9 @@ export default function Home() {
         </ul>
 
         <div className="checkWork">
-          <a href="#work">check my work</a>
+          <Link to="work" spy={true} smooth={true} offset={0} duration={500}>
+            check my work
+          </Link>
         </div>
       </div>
 

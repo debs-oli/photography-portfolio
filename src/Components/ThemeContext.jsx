@@ -6,7 +6,7 @@ export function ThemeContextProvider(props) {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const [lightTheme] = useState({
-    color: "#303030",
+    color: "#383838",
     backgroundColor: "#ffffff",
   });
 

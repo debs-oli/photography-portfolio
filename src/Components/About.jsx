@@ -6,6 +6,7 @@ import "../CSS/About.css";
 
 export default function About() {
   const [clickTab, setClickTab] = useState(1);
+
   const clickState = (index) => {
     setClickTab(index);
   };
