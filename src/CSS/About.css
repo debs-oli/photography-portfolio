@@ -190,6 +190,7 @@
 
 @media screen and (max-width: 1023px) {
   #about {
+    padding: 6rem 4rem 0 4rem;
     grid-template-columns: 1fr;
   }
 
