@@ -1,6 +1,5 @@
 import { Link } from "react-scroll";
 import { FaBehance, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
 import "../CSS/Home.css";
 
 export default function Home() {

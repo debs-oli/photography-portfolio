@@ -46,11 +46,11 @@
 #contacts .icon {
   width: 25px;
   height: 25px;
+  margin: 0.2rem;
   padding: 1rem;
-  margin: 5px;
   border-radius: 50%;
   background-color: var(--green);
-  color: white;
+  color: #ffffff;
 }
 
 #contacts .text {
@@ -61,7 +61,6 @@ form input {
   height: 46px;
   width: 100%;
   margin-bottom: 1.25rem;
-  border: 4px;
   font-size: 1rem;
   color: #171c1f;
   border: 1px solid #e1e1e1;
@@ -78,27 +77,26 @@ form textarea {
   border: 1px solid #e1e1e1;
 }
 
-form input[type="checkbox"] {
-  width: 14px;
-  height: 14px;
-  padding: 0;
-  margin: 0;
-}
-
 form label {
   font-family: var(--text-font);
   font-size: 0.8rem;
 }
 
+form input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+
 #contacts button {
   margin-top: 1rem;
+  padding: 0.5rem 0.5rem;
   font-family: var(--text-font);
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
   background-color: var(--green);
   color: #ffffff;
-  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -114,7 +112,6 @@ form label {
 
   #contacts .container {
     padding-top: 1.5rem;
-    display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
@@ -126,7 +123,7 @@ form label {
 
   #contacts .info {
     margin: 1rem;
-    margin-bottom: 3.5rem;
+    padding-bottom: 2rem;
     display: inline-block;
   }
 
@@ -136,6 +133,7 @@ form label {
   }
 
   #contacts h2 {
+    margin-top: -1.3rem;
     font-size: 1rem;
   }
 
@@ -148,13 +146,11 @@ form label {
 
 @media screen and (max-width: 480px) {
   #contacts {
-    padding: 2rem;
+    padding: 5rem 2rem 2rem 2rem;
   }
 
   #contacts .container {
     padding-top: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
 
@@ -162,14 +158,22 @@ form label {
     font-size: 1.4rem;
   }
 
+  #contacts h2 {
+    margin-top: -1.5rem;
+  }
+
   #contacts .info {
     margin: 2rem;
-    margin-bottom: 0.5rem;
+    padding-bottom: 0;
     display: block;
   }
 
   #contacts .icon {
     width: 15px;
     height: 15px;
+  }
+
+  #contacts form {
+    margin-top: -1rem;
   }
 }

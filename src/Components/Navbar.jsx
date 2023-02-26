@@ -1,10 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
-import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { HiMoon, HiSun } from "react-icons/hi";
-
+import { FaBars, FaTimes } from "react-icons/fa";
 import "../CSS/Navbar.css";
 
 export default function Navbar() {
@@ -28,22 +27,22 @@ export default function Navbar() {
       </h1>
 
       <ul style={theme} className={clickMenu ? "navMenu active" : "navMenu"}>
-        <li>
+        <li className="navLink">
           <Link to="home" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>
             home
           </Link>
         </li>
-        <li>
+        <li className="navLink">
           <Link to="about" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>
             about
           </Link>
         </li>
-        <li>
+        <li className="navLink">
           <Link to="work" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>
             work
           </Link>
         </li>
-        <li>
+        <li className="navLink">
           <Link to="contacts" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>
             contacts
           </Link>

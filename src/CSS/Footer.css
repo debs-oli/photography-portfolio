@@ -1,5 +1,4 @@
 #footer {
-  justify-content: center;
   text-align: center;
   box-shadow: var(--shadow);
 }
@@ -12,6 +11,13 @@
   text-transform: capitalize;
 }
 
+#footer p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: var(--title-font);
+  font-size: 0.8rem;
+}
+
 #footer ul {
   padding-top: 1rem;
 }
@@ -22,20 +28,10 @@
 }
 
 #footer ul li a {
+  font-size: 1.2rem;
   color: inherit;
 }
 
 #footer ul li a:hover {
   color: var(--green);
-}
-
-#footer .socialLinks {
-  font-size: 1.2rem;
-}
-
-#footer p {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-family: var(--title-font);
-  font-size: 0.8rem;
 }

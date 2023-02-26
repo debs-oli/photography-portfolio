@@ -1,5 +1,5 @@
 #work {
-  padding: 5rem 8rem 0rem 8rem;
+  padding: 5rem 7rem 0rem 7rem;
 }
 
 #work h1 {
@@ -17,17 +17,17 @@
 }
 
 #work ul li button {
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.3rem 0 0;
+  border-radius: 25px;
+  border: 2px solid var(--green);
   font-family: var(--text-font);
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
-  padding: 0.5rem 0.5rem;
-  margin: 0 0.3rem 0 0;
-  border-radius: 25px;
-  cursor: pointer;
-  border: 2px solid var(--green);
+  background-color: inherit;
   color: var(--green);
-  background: none;
+  cursor: pointer;
 }
 
 #work ul li button:hover {
@@ -40,7 +40,7 @@
 #work .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5rem;
+  grid-gap: 3rem;
   padding-top: 2rem;
 }
 
@@ -65,17 +65,17 @@
   border-radius: 18px;
 }
 
-#work .card:hover .overlay {
+#work .card .overlay:hover {
   opacity: 1;
 }
 
 #work .card h2 {
+  text-align: center;
+  text-transform: capitalize;
   font-family: var(--text-font);
   font-size: 1.2rem;
   font-weight: 500;
   color: #ffffff;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 #work .card p {
@@ -86,14 +86,14 @@
 }
 
 #work .card a {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
   font-family: var(--text-font);
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
   color: #ffffff;
   background-color: var(--green);
-  padding: 0.5rem 0.5rem;
-  border-radius: 0.5rem;
   cursor: pointer;
 }
 
@@ -108,11 +108,10 @@
 
 @media screen and (max-width: 1023px) {
   #work {
-    padding: 6rem 4rem 0 4rem;
+    padding: 6rem 3rem 0 3rem;
   }
 
   #work .container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
@@ -120,13 +119,11 @@
 
 @media screen and (max-width: 480px) {
   #work {
-    padding: 5rem 1rem 0 1rem;
+    padding: 5rem 3rem 0 3rem;
   }
 
   #work .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
   }
 
   #work p {
@@ -141,7 +138,7 @@
     font-size: 1.1rem;
   }
 
-  #work ul li {
+  #work ul li button {
     font-size: 0.9rem;
   }
 }

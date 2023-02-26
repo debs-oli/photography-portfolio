@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
-import { AiFillMessage } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
-
+import { AiFillMessage } from "react-icons/ai";
+import { FaPhoneAlt } from "react-icons/fa";
 import "../CSS/Contacts.css";
 
 export default function Contacts() {

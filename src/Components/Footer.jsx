@@ -10,17 +10,17 @@ export default function Footer() {
         <ul className="social">
           <li>
             <a href="https://www.behance.net/oceartn">
-              <FaBehance className="socialLinks" />
+              <FaBehance />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/oceartn/">
-              <FaInstagram className="socialLinks" />
+              <FaInstagram />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/oceartn/">
-              <FaLinkedinIn className="socialLinks" />
+              <FaLinkedinIn />
             </a>
           </li>
         </ul>

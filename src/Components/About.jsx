@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaUser, FaPhoneAlt, FaLocationArrow, FaAngleRight } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
-
 import "../CSS/About.css";
 
 export default function About() {
@@ -49,7 +48,7 @@ export default function About() {
         </ul>
 
         <div className="tabContent">
-          {/* ABOUT CONTENT */}
+          {/* ABOUT */}
           <div className={clickTab === 1 ? "content activeContent" : "content"}>
             <div className="aboutContent">
               <p>
@@ -85,7 +84,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          {/* SKILLS CONTENT */}
+          {/* SKILLS */}
           <div className={clickTab === 2 ? "content activeContent" : "content"}>
             <div className="skillsContent">
               <p>
@@ -121,7 +120,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* EDUCATION CONTENT */}
+          {/* EDUCATION */}
           <div className={clickTab === 3 ? "content activeContent" : "content"}>
             <div className="educationContent">
               <h2>school of arts, catholic university of portugal</h2>
@@ -159,7 +158,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          {/* EXPERIENCE CONTENT */}
+          {/* EXPERIENCE */}
           {experience.map((experience) => (
             <div key={experience.id} className={clickTab === 4 ? "content activeContent" : "content"}>
               <div className="experienceContent">
